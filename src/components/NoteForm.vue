@@ -14,7 +14,9 @@ const createNote = () => {
     body: JSON.stringify({ title: newNoteTitle.value.trim(), body: newNoteBody.value.trim() }),
   })
     .then((response) => response.json())
-    .then((data) => console.log(data));
+    .then((data) => {
+      console.log(data)
+    }
 };
 </script>
 
